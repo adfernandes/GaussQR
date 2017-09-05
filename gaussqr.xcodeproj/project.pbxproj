@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496384D808FAFEF400996907 /* libfftpack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 496384D708FAFEC400996907 /* libfftpack.a */; };
+		496384E008FAFF2B00996907 /* linalg.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4911151208E98FA10032A972 /* linalg.hpp */; };
+		496384E508FAFF3F00996907 /* fftpack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D72BC908CF340900F77854 /* fftpack.cpp */; };
+		496384E808FAFF4400996907 /* fftpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D72BCA08CF340900F77854 /* fftpack.h */; };
+		496384F108FAFFBF00996907 /* precision.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A9808008EC437D006C9082 /* precision.h */; };
+		49A9808108EC437D006C9082 /* precision.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A9808008EC437D006C9082 /* precision.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49D72BEB08CF340900F77854 /* gaussqr.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D72BCD08CF340900F77854 /* gaussqr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49D72BEC08CF340900F77854 /* lanczos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D72BCE08CF340900F77854 /* lanczos.cpp */; };
+		49D72BED08CF340900F77854 /* mtqli.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D72BCF08CF340900F77854 /* mtqli.cpp */; };
+		49E2A78708FC27C400491DE5 /* gaussqr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49E2A78608FC27C400491DE5 /* gaussqr.cpp */; };
+		49F71C8208E9B75E00C2239B /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49F71C8108E9B75E00C2239B /* test.cpp */; };
+		49F71CC408E9BE3700C2239B /* fejer2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49F71CC308E9BE3700C2239B /* fejer2.cpp */; };
+		49F71CF608E9D3B100C2239B /* libgaussqr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC046055464E500DB518D /* libgaussqr.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4963850908FB016C00996907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496384D608FAFEC400996907;
+			remoteInfo = fftpack;
+		};
+		49F71C7D08E9B6ED00C2239B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = gaussqr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4911151208E98FA10032A972 /* linalg.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = linalg.hpp; path = source/util/linalg.hpp; sourceTree = "<group>"; };
+		496384D708FAFEC400996907 /* libfftpack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfftpack.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A9808008EC437D006C9082 /* precision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = precision.h; path = source/util/precision.h; sourceTree = "<group>"; };
+		49D72BC908CF340900F77854 /* fftpack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fftpack.cpp; sourceTree = "<group>"; };
+		49D72BCA08CF340900F77854 /* fftpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftpack.h; sourceTree = "<group>"; };
+		49D72BCD08CF340900F77854 /* gaussqr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gaussqr.h; path = source/gaussqr.h; sourceTree = "<group>"; };
+		49D72BCE08CF340900F77854 /* lanczos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lanczos.cpp; path = source/lanczos.cpp; sourceTree = "<group>"; };
+		49D72BCF08CF340900F77854 /* mtqli.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mtqli.cpp; path = source/mtqli.cpp; sourceTree = "<group>"; };
+		49E2A78608FC27C400491DE5 /* gaussqr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gaussqr.cpp; path = source/gaussqr.cpp; sourceTree = "<group>"; };
+		49F71C7008E9B52900C2239B /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F71C8108E9B75E00C2239B /* test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		49F71CC308E9BE3700C2239B /* fejer2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fejer2.cpp; path = source/fejer2.cpp; sourceTree = "<group>"; };
+		D2AAC046055464E500DB518D /* libgaussqr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgaussqr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		496384D508FAFEC400996907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F71C6E08E9B52900C2239B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F71CF608E9D3B100C2239B /* libgaussqr.a in Frameworks */,
+				496384D808FAFEF400996907 /* libfftpack.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D289987405E68DCB004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* gaussqr */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = gaussqr;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				49F71C7F08E9B72C00C2239B /* tests */,
+				4911151408E98FC00032A972 /* util */,
+				49D72BC708CF340900F77854 /* fft */,
+				49D72BCD08CF340900F77854 /* gaussqr.h */,
+				49D72BCE08CF340900F77854 /* lanczos.cpp */,
+				49D72BCF08CF340900F77854 /* mtqli.cpp */,
+				49F71CC308E9BE3700C2239B /* fejer2.cpp */,
+				49E2A78608FC27C400491DE5 /* gaussqr.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC046055464E500DB518D /* libgaussqr.a */,
+				496384D708FAFEC400996907 /* libfftpack.a */,
+				49F71C7008E9B52900C2239B /* test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4911151408E98FC00032A972 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				4911151208E98FA10032A972 /* linalg.hpp */,
+				49A9808008EC437D006C9082 /* precision.h */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		49D72BC708CF340900F77854 /* fft */ = {
+			isa = PBXGroup;
+			children = (
+				49D72BC908CF340900F77854 /* fftpack.cpp */,
+				49D72BCA08CF340900F77854 /* fftpack.h */,
+			);
+			name = fft;
+			path = source/fft;
+			sourceTree = "<group>";
+		};
+		49F71C7F08E9B72C00C2239B /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				49F71C8108E9B75E00C2239B /* test.cpp */,
+			);
+			name = tests;
+			path = source/tests;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		496384D308FAFEC400996907 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496384E808FAFF4400996907 /* fftpack.h in Headers */,
+				496384F108FAFFBF00996907 /* precision.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC043055464E500DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D72BEB08CF340900F77854 /* gaussqr.h in Headers */,
+				49A9808108EC437D006C9082 /* precision.h in Headers */,
+				496384E008FAFF2B00996907 /* linalg.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		496384D608FAFEC400996907 /* fftpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496384D908FAFF1200996907 /* Build configuration list for PBXNativeTarget "fftpack" */;
+			buildPhases = (
+				496384D308FAFEC400996907 /* Headers */,
+				496384D408FAFEC400996907 /* Sources */,
+				496384D508FAFEC400996907 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fftpack;
+			productName = fftpack;
+			productReference = 496384D708FAFEC400996907 /* libfftpack.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		49F71C6F08E9B52900C2239B /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F71C7208E9B54700C2239B /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				49F71C6D08E9B52900C2239B /* Sources */,
+				49F71C6E08E9B52900C2239B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49F71C7E08E9B6ED00C2239B /* PBXTargetDependency */,
+				4963850A08FB016C00996907 /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = test;
+			productReference = 49F71C7008E9B52900C2239B /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+		D2AAC045055464E500DB518D /* gaussqr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A9039708CF33400086D566 /* Build configuration list for PBXNativeTarget "gaussqr" */;
+			buildPhases = (
+				D2AAC043055464E500DB518D /* Headers */,
+				D2AAC044055464E500DB518D /* Sources */,
+				D289987405E68DCB004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gaussqr;
+			productName = gaussqr;
+			productReference = D2AAC046055464E500DB518D /* libgaussqr.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 49A9039B08CF33400086D566 /* Build configuration list for PBXProject "gaussqr" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* gaussqr */;
+			projectDirPath = "";
+			targets = (
+				D2AAC045055464E500DB518D /* gaussqr */,
+				496384D608FAFEC400996907 /* fftpack */,
+				49F71C6F08E9B52900C2239B /* test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		496384D408FAFEC400996907 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496384E508FAFF3F00996907 /* fftpack.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F71C6D08E9B52900C2239B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F71C8208E9B75E00C2239B /* test.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC044055464E500DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D72BEC08CF340900F77854 /* lanczos.cpp in Sources */,
+				49D72BED08CF340900F77854 /* mtqli.cpp in Sources */,
+				49F71CC408E9BE3700C2239B /* fejer2.cpp in Sources */,
+				49E2A78708FC27C400491DE5 /* gaussqr.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4963850A08FB016C00996907 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496384D608FAFEC400996907 /* fftpack */;
+			targetProxy = 4963850908FB016C00996907 /* PBXContainerItemProxy */;
+		};
+		49F71C7E08E9B6ED00C2239B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC045055464E500DB518D /* gaussqr */;
+			targetProxy = 49F71C7D08E9B6ED00C2239B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		496384DA08FAFF1200996907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/lib";
+				LIBRARY_STYLE = STATIC;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = fftpack;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		496384DB08FAFF1200996907 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/lib";
+				LIBRARY_STYLE = STATIC;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = fftpack;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		496384DC08FAFF1200996907 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/lib";
+				LIBRARY_STYLE = STATIC;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = fftpack;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		49A9039808CF33400086D566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /;
+				PRODUCT_NAME = gaussqr;
+				PUBLIC_HEADERS_FOLDER_PATH = /;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		49A9039908CF33400086D566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /;
+				PRODUCT_NAME = gaussqr;
+				PUBLIC_HEADERS_FOLDER_PATH = /;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		49A9039A08CF33400086D566 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /;
+				PRODUCT_NAME = gaussqr;
+				PUBLIC_HEADERS_FOLDER_PATH = /;
+			};
+			name = Default;
+		};
+		49A9039C08CF33400086D566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					ppc64,
+					i386,
+					x86_64,
+				);
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				HEADER_SEARCH_PATHS = (
+					util,
+					fft,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		49A9039D08CF33400086D566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					ppc64,
+					i386,
+					x86_64,
+				);
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				HEADER_SEARCH_PATHS = (
+					util,
+					fft,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		49A9039E08CF33400086D566 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					ppc64,
+					i386,
+					x86_64,
+				);
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				HEADER_SEARCH_PATHS = (
+					util,
+					fft,
+				);
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Default;
+		};
+		49F71C7308E9B54700C2239B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		49F71C7408E9B54700C2239B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		49F71C7508E9B54700C2239B /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = test;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		496384D908FAFF1200996907 /* Build configuration list for PBXNativeTarget "fftpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496384DA08FAFF1200996907 /* Debug */,
+				496384DB08FAFF1200996907 /* Release */,
+				496384DC08FAFF1200996907 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		49A9039708CF33400086D566 /* Build configuration list for PBXNativeTarget "gaussqr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A9039808CF33400086D566 /* Debug */,
+				49A9039908CF33400086D566 /* Release */,
+				49A9039A08CF33400086D566 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		49A9039B08CF33400086D566 /* Build configuration list for PBXProject "gaussqr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A9039C08CF33400086D566 /* Debug */,
+				49A9039D08CF33400086D566 /* Release */,
+				49A9039E08CF33400086D566 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		49F71C7208E9B54700C2239B /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F71C7308E9B54700C2239B /* Debug */,
+				49F71C7408E9B54700C2239B /* Release */,
+				49F71C7508E9B54700C2239B /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
